@@ -66,7 +66,7 @@
 const loader = new STLLoader();
         loader.load( './stl/binary/111C51516.stl', function ( geometry ) {
  
-          const material = new THREE.MeshPhongMaterial( { color: 0xff9c7c, specular: 0x494949, shininess: 200 } );
+     /**     const material = new THREE.MeshPhongMaterial( { color: 0xff9c7c, specular: 0x494949, shininess: 200 } );
           const mesh = new THREE.Mesh( geometry, material );
  
           mesh.scale.set( 0.005,0.005,0.005);
@@ -140,7 +140,7 @@ const loader = new STLLoader();
 					let meshMaterial = material;
 
 					if ( geometry.hasColors ) {
-
+**/
 						meshMaterial = new THREE.MeshPhongMaterial( { opacity: geometry.alpha, vertexColors: true } );
 
 					}
@@ -157,7 +157,7 @@ const loader = new STLLoader();
 					scene.add( mesh );
 
 				} );
-**/
+
 
 				// Lights
 
